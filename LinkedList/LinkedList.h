@@ -3,22 +3,8 @@
 //
 
 #include <iostream>
+#include "Node.h"
 
-template<class T>
-class Node {
-public:
-    T e;
-    Node *next;
-
-    Node(T e, Node *next) : e(e), next(next) {
-    }
-
-    Node(T e) : e(e), next(nullptr) {
-    }
-
-    Node() : next(nullptr) {
-    }
-};
 
 template<class T>
 class LinkedList {

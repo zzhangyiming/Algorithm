@@ -1,14 +1,13 @@
 
-#include "LinkedList/LinkedList.h"
-#include<time.h>
+#include "Queue/LinkedListQueue.h"
 #include "iostream"
 using  namespace std;
 
 int main(){
-    LinkedList<int> *linkedList = new LinkedList<int>();
-    for(int i = 1;i<=9;i++){
-        linkedList->addLast(rand()%(100));
-    }
-    linkedList->print();
+    LinkedListQueue<string> *queue = new LinkedListQueue<string>();
+    queue->enqueue("张一鸣");
+    queue->enqueue("是");
+    queue->enqueue("世界上最帅的人");
+    queue->print();
     return 0;
 }
